@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  /* text-align:;*/
+  font-family: Helvetica, sans-serif;
+
+} 
+
+
+.team-header  {
+  margin-bottom: 5%;
+
+}
+
+
+h3 {
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+
+hr {
+  width: 95%;
+  margin: 20px auto;
+  
+}
+
+
+
+
+/*
+*****************************
+* =header
+*****************************
+*/
+
+
+header {
+    min-width: 100%;
+    min-height: 40px;
+    background-color: #f3f3f3;
+    background-size: 80%;
+    text-align: right;
+    padding: 1% 3%;
+    color: white;
+    font-size: 12px;
+    border-bottom: 1px solid #e6e6e6;
+
+
+}
+
+
+header a {
+  text-decoration: none;
+  color: black;
+  margin-left: 3%;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+/*
+*****************************
+* =navigation
+*****************************
+*/
+
+nav {
+    min-width: 100%;
+    min-height: 64px;
+    background-color: white;
+    color: white;
+    display: flex;
+    padding: 1% 3%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+nav::after {
+  content: "";
+  display: block;
+  clear:both;
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  white-space: nowrap;
+  
+}
+
+
+
+
+li {
+  display:inline-block;
+  padding: 5%;
+  
+
+}
+
+li a, li a:visited, .nav-dd-content a {
+  text-decoration: none;
+  color: black;
+  
+  
+}
+
+
+
+li a:hover, .nav-dd-content a:hover {
+ color: #2d810e;
+}
+
+
+/*
+*****************************
+* =dropdown
+*****************************
+*/
+
+
+.nav-btn {
+  display: inline-block;
+  text-decoration: none;
+  /* color:#F5C7A9; */
+  
+  
+}
+
+
+.nav-dd-content {
+  display: none;
+  position: absolute; 
+  top:80%;
+  min-width: 160px;
+  padding: .045em .30em;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  z-index: 1;
+  
+  
+}
+
+.nav-dd-content a {
+  display: block;
+  text-decoration: none;
+  padding: 20px 10px;
+  border-radius: 2px;
+}
+
+.nav-dd:hover .nav-btn {
+  color: #2d810e;
+  
+}
+
+
+.nav-dd:hover i {
+  transform: rotate(180deg);
+  color: #2d810e;
+  /* transition: all 0.3s ease-in-out 0s; */
+}
+
+.nav-dd-content a:hover {
+  background-color: rgba(45, 129, 14, .1);
+  color: #1d2f28;
+}
+
+.nav-dd:hover .nav-dd-content {
+  display: block;
+  
+}
+
+
+
+
+
+
+
+
+
+/*
+*****************************
+* =images
+*****************************
+*/
+
+
+.logo {
+  max-width: 30px;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+
+section img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+.cyber::after {
+  content: "wordssssssss";
+  color: white;
+}
+
+main {
+    min-width: 100%;
+    /* background-color:; */
+    /* margin-bottom:; */
+}
+
+
+
+
+
+
+
+/*
+*****************************
+* =hero section
+*****************************
+*/
+
+
+.hero-wrapper {
+  /* display: flex; */
+  position: relative;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  background-color: #2d810e;
+}
+
+.cyber-img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  
+  opacity:.7;
+}
+
+.cyber-img-text {
+  background-color: #fff;
+  position: absolute;
+  display: inline-block;
+  padding: 60px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  bottom: 20%;
+  left: 5%;
+  text-align: center;
+  width: 40%;
+
+}
+
+.cyber-img-text h3 {
+  font-size: 3rem;
+  line-height: 1.125em;
+  margin-bottom: 5%;
+}
+
+.cyber-img-text h5 {
+  font-size: 1.2rem;
+}
+
+.cyber-img::before {
+  display: block;
+  
+  width: 100%;
+  z-index: 3;
+}
+
+
+.shop-now-btn {
+  background-color: #fff;
+  text-transform: uppercase;
+  margin-top: 30px;
+  width: 200px;
+  height: 48px;
+  border: 2px solid #2d810e;
+  border-radius: 5px;
+}
+
+.shop-now-btn a {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  line-height: 48px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+  
+}
+
+.shop-now-btn:hover   {
+  background-color: #2d810e;
+  color: #fff;
+}
+
+
+.shop-now-btn a:hover   {
+  color: #fff;
+}
+
+
+/* section {
+  width: 80%;
+  height: 1250px;
+  background-color: white;
+  color: white;
+  background-image: url(../img/cyber.jpg);
+  margin: auto;
+
+
+} */
+
+
+footer {
+    min-width: 100%;
+    min-height: 100px;
+    padding-left: 5%;
+    background-color: #666;
+    margin-bottom: 1%;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+/*
+*****************************
+* =team page
+*****************************
+*/
+
+
+.team-img {
+  width: 15%;
+  border-radius: 100%;
+  float:left;
+  margin-right: 7%;
+  shape-outside: circle(30%);
+}
+
+.team {
+  width: 80%;
+  margin: auto;
+}
+
+.team-row {
+  width: inherit;
+  margin: 30px auto;
+  /* display: flex; */
+  /* align-items: center; */
+
+}
+
+
+.team-hr {
+  border-top-style: dotted;
+  border-width: 10px 0 0 0;
+  border-color: #f3f3f3;
+  width: 7%;
+  margin: 75px auto;
+}
+
+
+
+/*
+*****************************
+* =contact page
+*****************************
+*/
+
+
+.contact-top {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  align-items: center;
+  width: 90%;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 auto 20px;
+  
+}
+
+.contact-top div {
+  /* margin: 0 50px; */
+  
+}
+
+.contact-top h1 {
+  margin-bottom: 10px;
+  font-size: 47px;
+  font-weight: 200;
+}
+
+.contact-top p {
+  font-size: 19px;
+}
+
+.contact-top img {
+  width: 150px;
+  margin: 20px 0;
+  justify-self: center;
+ 
+ 
+}
+
+
+.contact-md {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.contact-md div {
+  width: 90%;
+}
+
+
+.contact-md-faq {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 6px;
+  
+
+}
+
+.contact-md-faq {
+  margin-bottom: 30px;
+}
+.contact-md h3 {
+  font-size: 33px;
+  margin-bottom: 50px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+
+.contact-md-faq span {
+  display: block;
+  margin-bottom: 30px;
+  line-height: 1.5rem;
+}
+
+.contact-md-faq span:nth-child(7) {
+  margin-bottom: 100px;
+}
